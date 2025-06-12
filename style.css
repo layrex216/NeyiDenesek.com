@@ -1,0 +1,134 @@
+/* Genel Ayarlar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Başlık (Header) */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #388E3C;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #2E7D32;
+    border-radius: 5px;
+}
+
+/* Reklam Alanı */
+.reklam {
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    margin: 20px auto;
+    border: 1px dashed #ccc;
+    width: 90%;
+    max-width: 728px;
+}
+
+/* Arama Kutusu */
+.arama {
+    max-width: 800px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.arama input[type="text"] {
+    width: 90%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Ana İçerik */
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+article {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+article img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+
+.etiket {
+    font-size: 0.9em;
+    color: #666;
+    font-style: italic;
+}
+
+article h2 {
+    margin-top: 10px;
+}
+
+article a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Mobil Uyum */
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .reklam {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .arama input[type="text"] {
+        width: 100%;
+    }
+}
