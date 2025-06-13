@@ -3,191 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DenedinMi - Blog Platformu</title>
+    <title>Denedin Mi?</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Mobil uyum için stil (basit responsive yapı) */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-            color: #333;
-        }
-
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            background-color: #388E3C;
-            margin: 0;
-        }
-
-        nav ul li {
-            margin: 0 10px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 12px 10px;
-            display: block;
-        }
-
-        nav ul li a:hover {
-            background-color: #2E7D32;
-            border-radius: 5px;
-        }
-
-        .reklam {
-            text-align: center;
-            background-color: #fff;
-            padding: 15px;
-            margin: 20px auto;
-            border: 1px dashed #ccc;
-            width: 90%;
-            max-width: 728px;
-        }
-
-        .arama {
-            max-width: 800px;
-            margin: 10px auto;
-            text-align: center;
-        }
-
-        .arama input[type="text"] {
-            width: 90%;
-            max-width: 400px;
-            padding: 10px;
-            font-size: 16px;
-        }
-
-        main {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 0 15px;
-        }
-
-        article {
-            background-color: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        article img {
-            width: 100%;
-            border-radius: 10px;
-            height: auto;
-        }
-
-        .etiket {
-            font-size: 0.9em;
-            color: #666;
-            font-style: italic;
-        }
-
-        article h2 {
-            margin-top: 10px;
-        }
-
-        article a {
-            color: #4CAF50;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        article a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 30px;
-        }
-
-        @media screen and (max-width: 600px) {
-            nav ul {
-                flex-direction: column;
-            }
-
-            .reklam {
-                width: 95%;
-                padding: 10px;
-            }
-
-            .arama input[type="text"] {
-                width: 100%;
-            }
-        }
-    </style>
 </head>
 <body>
     <header>
-        <h1>DenedinMi.com</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Ana Sayfa</a></li>
-                <li><a href="#">Kategoriler</a></li>
-                <li><a href="#">Hakkımızda</a></li>
-                <li><a href="#">İletişim</a></li>
-            </ul>
-        </nav>
+        <h1>Denedin Mi?</h1>
+        <p>Deneyimlere dayalı içerikler, öneriler, yorumlar</p>
     </header>
 
-    <section class="reklam">
-        <!-- Google AdSense için yer -->
-        <p>Reklam Alanı (728x90)</p>
-    </section>
+    <nav>
+        <ul>
+            <li><a href="#">Ana Sayfa</a></li>
+            <li><a href="#kategori-teknoloji">Teknoloji</a></li>
+            <li><a href="#kategori-kitap">Kitap / Film</a></li>
+            <li><a href="#kategori-yemek">Yeme-İçme</a></li>
+            <li><a href="#kategori-para">Para Kazanma</a></li>
+            <li><a href="#kategori-kisisel">Kişisel Gelişim</a></li>
+        </ul>
+    </nav>
+
+    <div class="arama">
+        <input type="text" placeholder="Ara...">
+    </div>
+
+    <div class="reklam">
+        Reklam Alanı – Buraya Google AdSense kodu eklenebilir
+    </div>
 
     <main>
-        <section class="arama">
-            <input type="text" placeholder="Ara..." />
-        </section>
+        <article id="kategori-teknoloji">
+            <h2>📱 Teknoloji</h2>
+            <p class="etiket">Etiketler: teknoloji, inceleme, deneyim</p>
+            <img src="https://via.placeholder.com/800x400?text=Teknoloji+1" alt="Teknoloji 1">
+            <h3>iPhone 15 Pro Max Deneyimi</h3>
+            <p>Son model iPhone'u 2 hafta boyunca test ettim. Batarya süresi, kamera ve performans etkileyici. Fakat fiyat/performans konusu tartışılır.</p>
+            <a href="#">Devamını oku</a>
 
-        <section>
-            <article>
-                <img src="https://via.placeholder.com/800x400" alt="Kitaplar">
-                <h2>Yeni Başlayanlar İçin En İyi 5 Kitap</h2>
-                <p class="etiket">Kategori: Kitap</p>
-                <p>Okumaya nereden başlayacağınızı bilmiyor musunuz? İşte harika bir liste...</p>
-                <a href="#">Kitap listesine göz at</a>
-            </article>
+            <img src="https://via.placeholder.com/800x400?text=Teknoloji+2" alt="Teknoloji 2">
+            <h3>ChatGPT İle Günlük Hayat Kolaylaşıyor</h3>
+            <p>Yapay zekayı günlük işlerinizde kullanmak ister misiniz? Not tutma, planlama, hatta yemek tarifi bile yazdırabilirsiniz.</p>
+            <a href="#">Detaylar burada</a>
+        </article>
 
-            <article>
-                <img src="https://via.placeholder.com/800x400" alt="iPhone 15 Pro">
-                <h2>iPhone 15 Pro İncelemesi</h2>
-                <p class="etiket">Kategori: Teknoloji</p>
-                <p>Apple'ın son modeli gerçekten parasını hak ediyor mu? Detaylı inceledik.</p>
-                <a href="#">İncelemeyi oku</a>
-            </article>
+        <article id="kategori-kitap">
+            <h2>📚 Kitap / Film</h2>
+            <p class="etiket">Etiketler: kitap, film, öneri</p>
+            <img src="https://via.placeholder.com/800x400?text=Kitap+1" alt="Kitap 1">
+            <h3>"Hayvan Çiftliği"ni Neden Okumalısın?</h3>
+            <p>George Orwell'in bu kısa ama etkili kitabı, günümüz dünyasına sert bir ayna tutuyor.</p>
+            <a href="#">Devamını oku</a>
 
-            <article>
-                <img src="https://via.placeholder.com/800x400" alt="Kahvaltı Mekanları">
-                <h2>İstanbul'da En İyi 10 Kahvaltı Mekanı</h2>
-                <p class="etiket">Kategori: Yeme-İçme</p>
-                <p>Hafta sonu kahvaltısı için nereye gitmeli? En popüler mekanları derledik.</p>
-                <a href="#">Mekanları keşfet</a>
-            </article>
-        </section>
+            <img src="https://via.placeholder.com/800x400?text=Film+1" alt="Film 1">
+            <h3>Interstellar: Bilimkurgu ve Duyguların Dansı</h3>
+            <p>Uzay temalı bir film olmasına rağmen insan ilişkileri ve fedakarlık temalarıyla dikkat çekiyor.</p>
+            <a href="#">İzlemeye değer mi?</a>
+        </article>
+
+        <article id="kategori-yemek">
+            <h2>🍽️ Yeme-İçme</h2>
+            <p class="etiket">Etiketler: yemek, mekan, öneri</p>
+            <img src="https://via.placeholder.com/800x400?text=Yemek+1" alt="Yemek 1">
+            <h3>Kadıköy’de Gidilecek 3 Kahvaltı Mekanı</h3>
+            <p>İstanbul Kadıköy'de güzel bir kahvaltı için önerdiğimiz 3 lezzet durağını senin için denedik!</p>
+            <a href="#">Lezzet durakları</a>
+
+            <img src="https://via.placeholder.com/800x400?text=Yemek+2" alt="Yemek 2">
+            <h3>Evde 10 Dakikada Pratik Makarna</h3>
+            <p>Hem öğrenci dostu hem de doyurucu bir tarif. Sadece 4 malzeme ile nefis sonuç!</p>
+            <a href="#">Tarif burada</a>
+        </article>
+
+        <article id="kategori-para">
+            <h2>💼 Para Kazanma</h2>
+            <p class="etiket">Etiketler: internet, kazanç, freelance</p>
+            <img src="https://via.placeholder.com/800x400?text=Para+1" alt="Para 1">
+            <h3>Blog Yazarak Para Kazanılır mı?</h3>
+            <p>Evet! Google AdSense, sponsor içerikler ve affiliate bağlantılar ile gelir elde etmek mümkün.</p>
+            <a href="#">Nasıl yapılır?</a>
+
+            <img src="https://via.placeholder.com/800x400?text=Para+2" alt="Para 2">
+            <h3>Freelance Sitelerle Ek Gelir</h3>
+            <p>Upwork, Bionluk, Fiverr gibi platformlar sayesinde yeteneğinizi paraya dönüştürün.</p>
+            <a href="#">Başlamak için tıkla</a>
+        </article>
+
+        <article id="kategori-kisisel">
+            <h2>🧠 Kişisel Gelişim</h2>
+            <p class="etiket">Etiketler: alışkanlık, verimlilik, motivasyon</p>
+            <img src="https://via.placeholder.com/800x400?text=Kisisel+1" alt="Kişisel 1">
+            <h3>Sabah Rutinleri ile Güne Enerjik Başla</h3>
+            <p>Erken kalkmak, spor yapmak ve 10 dakikalık planlama ile gününüz daha verimli geçer.</p>
+            <a href="#">Rutini öğren</a>
+
+            <img src="https://via.placeholder.com/800x400?text=Kisisel+2" alt="Kişisel 2">
+            <h3>Alışkanlık Kazanmanın Bilimsel Yolu</h3>
+            <p>"Atomic Habits" kitabından ilhamla alışkanlık kazanmanın yolları...</p>
+            <a href="#">Detayları oku</a>
+        </article>
     </main>
 
     <footer>
-        <p>&copy; 2025 DenedinMi.com - Tüm hakları saklıdır.</p>
+        <p>&copy; 2025 Denedin Mi? Tüm hakları saklıdır.</p>
     </footer>
 </body>
 </html>
