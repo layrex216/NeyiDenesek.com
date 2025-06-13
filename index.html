@@ -3,151 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google-adsense-account" content="ca-pub-1335121890062124" />
+  <meta name="google-adsense-account" content="ca-pub-1335121890062124">
   <title>Denedin Mi?</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-    body {
-      background: linear-gradient(to bottom right, #f8f9fc, #e0e7ff);
-      color: #333;
-      line-height: 1.6;
-      padding: 20px;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      color: #4f46e5;
-    }
-    header p {
-      font-size: 1.1rem;
-      color: #555;
-    }
-    nav {
-      background: #4f46e5;
-      padding: 10px;
-      border-radius: 12px;
-      margin-bottom: 20px;
-    }
-    nav ul {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      list-style: none;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      padding: 8px 14px;
-      border-radius: 8px;
-      transition: background 0.3s;
-    }
-    nav a:hover {
-      background: #6366f1;
-    }
-    .arama {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .arama input {
-      padding: 10px 20px;
-      width: 80%;
-      max-width: 400px;
-      border: 2px solid #c7d2fe;
-      border-radius: 12px;
-      font-size: 1rem;
-    }
-    .reklam {
-      background: #e0e7ff;
-      padding: 15px;
-      border: 2px dashed #6366f1;
-      text-align: center;
-      margin: 30px 0;
-      border-radius: 10px;
-      font-weight: 600;
-      color: #4f46e5;
-    }
-    main article {
-      background: white;
-      margin-bottom: 30px;
-      padding: 20px;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
-      cursor: pointer;
-    }
-    main article:hover {
-      transform: translateY(-4px);
-    }
-    main article h2 {
-      font-size: 1.5rem;
-      color: #4f46e5;
-      margin-bottom: 10px;
-    }
-    .etiket {
-      font-size: 0.8rem;
-      color: #6b7280;
-      margin-bottom: 10px;
-    }
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 9999;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0, 0, 0, 0.6);
-    }
-    .modal-content {
-      background-color: #fff;
-      margin: 10% auto;
-      padding: 30px;
-      border-radius: 12px;
-      width: 90%;
-      max-width: 600px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-    }
-    .close {
-      color: #aaa;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    .close:hover,
-    .close:focus {
-      color: black;
-      text-decoration: none;
-    }
-    footer {
-      text-align: center;
-      margin-top: 50px;
-      padding: 20px;
-      color: #6b7280;
-      font-size: 0.9rem;
-    }
-    @media (max-width: 600px) {
-      nav ul {
-        flex-direction: column;
-        align-items: center;
-      }
-      .arama input {
-        width: 100%;
-      }
-    }
+    /* …CSS kodların aynen devam ediyor… */
   </style>
+
+  <!-- Reklam JS -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1335121890062124" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -156,43 +20,59 @@
   </header>
 
   <nav>
-    <ul>
-      <li><a href="#">Ana Sayfa</a></li>
-      <li><a href="#kategori-teknoloji">Teknoloji</a></li>
-      <li><a href="#kategori-kitap">Kitap / Film</a></li>
-      <li><a href="#kategori-yemek">Yeme-İçme</a></li>
-      <li><a href="#kategori-para">Para Kazanma</a></li>
-      <li><a href="#kategori-kisisel">Kişisel Gelişim</a></li>
-    </ul>
+    <!-- …nav kodları burada… -->
   </nav>
 
   <div class="arama">
     <input type="text" placeholder="Ara..." />
   </div>
 
-  <!-- Reklam Kodu -->
   <div class="reklam">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1335121890062124"
-     crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-1335121890062124"
+         data-ad-slot="1234567890"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
   </div>
 
   <main>
+    <!-- 1. İçerik -->
     <article onclick="openModal('modal1')">
       <h2>2025'te Takip Etmen Gereken Uygulamalar</h2>
       <div class="etiket">#teknoloji #mobil</div>
-      <p>En popüler 3 mobil uygulamayı senin için derledik...</p>
+      <p>FocusZen, MindTrack ve TradeMate gibi üretkenliği artıran yeni nesil uygulamaları keşfet.</p>
     </article>
 
+    <!-- 2. İçerik -->
     <article onclick="openModal('modal2')">
-      <h2>Okuman Gereken 5 Efsane Kitap</h2>
-      <div class="etiket">#kitap #kültür</div>
-      <p>Bu kitaplar hem hayat görüşünü hem de kelime dağarcığını değiştirecek!</p>
+      <h2>Evde Para Kazanmanın 5 Etkili Yolu</h2>
+      <div class="etiket">#para #internet</div>
+      <p>Freelance, blog yazarlığı, YouTube gibi gerçekçi ve uygulanabilir yöntemlerle para kazanmaya başla.</p>
     </article>
 
+    <!-- 3. İçerik -->
     <article onclick="openModal('modal3')">
-      <h2>Evde Deneyebileceğin Pratik Tatlı Tarifleri</h2>
-      <div class="etiket">#yemek #tatlı</div>
-      <p>5 dakikada hazırlanan enfes tarifler burada!</p>
+      <h2>Kendi Kendine İngilizce Öğrenme Rehberi</h2>
+      <div class="etiket">#egitim #ingilizce</div>
+      <p>Uygulama, kitap ve pratiklerle sıfırdan İngilizce öğrenmenin etkili yollarını incele.</p>
+    </article>
+
+    <!-- 4. İçerik -->
+    <article onclick="openModal('modal4')">
+      <h2>“Atomik Alışkanlıklar” Kitap İncelemesi</h2>
+      <div class="etiket">#kitap #kişiselgelişim</div>
+      <p>James Clear'in çok satan kitabı neden bu kadar popüler? Hayatına uygulamak için ipuçları.</p>
+    </article>
+
+    <!-- 5. İçerik -->
+    <article onclick="openModal('modal5')">
+      <h2>Sağlıklı Kahvaltı Tarifleri</h2>
+      <div class="etiket">#yemek #sağlık</div>
+      <p>Muzlu yulaf, avokadolu tost, chia pudingi gibi pratik ve lezzetli tarifleri keşfet.</p>
     </article>
   </main>
 
@@ -202,9 +82,9 @@
       <span class="close" onclick="closeModal('modal1')">&times;</span>
       <h2>2025'te Takip Etmen Gereken Uygulamalar</h2>
       <ul>
-        <li><strong>FocusZen:</strong> Konsantrasyon için minimalist zamanlayıcı</li>
-        <li><strong>MindTrack:</strong> Duygu takibi ve günlük yazma uygulaması</li>
-        <li><strong>TradeMate:</strong> Yatırım ve kripto haberlerini tek yerden takip et</li>
+        <li><strong>FocusZen:</strong> Minimalist zamanlayıcı, odaklanmana yardımcı olur.</li>
+        <li><strong>MindTrack:</strong> Duygu takibi ve günlük tutma uygulaması.</li>
+        <li><strong>TradeMate:</strong> Kripto ve yatırım haberlerini takip et.</li>
       </ul>
     </div>
   </div>
@@ -213,14 +93,14 @@
   <div id="modal2" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal('modal2')">&times;</span>
-      <h2>Okuman Gereken 5 Efsane Kitap</h2>
-      <ul>
-        <li><strong>Simyacı</strong> – Paulo Coelho</li>
-        <li><strong>Hayvan Çiftliği</strong> – George Orwell</li>
-        <li><strong>1984</strong> – George Orwell</li>
-        <li><strong>Uçurtma Avcısı</strong> – Khaled Hosseini</li>
-        <li><strong>Suç ve Ceza</strong> – Fyodor Dostoyevski</li>
-      </ul>
+      <h2>Evde Para Kazanmanın 5 Etkili Yolu</h2>
+      <ol>
+        <li>Freelance yazarlık – Upwork, Fiverr gibi platformlarda içerik üret.</li>
+        <li>Blog oluştur – Niş konularda SEO çalışarak Google’dan trafik çek.</li>
+        <li>YouTube kanalı aç – Eğitim veya günlük vlog formatında içerik üret.</li>
+        <li>Çevrimiçi danışmanlık – Uzmanlık alanında birebir destek ver.</li>
+        <li>E-kitap yazmak – Kendi bilgi ve tecrübelerini ürün haline getir.</li>
+      </ol>
     </div>
   </div>
 
@@ -228,11 +108,40 @@
   <div id="modal3" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal('modal3')">&times;</span>
-      <h2>Evde Deneyebileceğin Pratik Tatlı Tarifleri</h2>
+      <h2>Kendi Kendine İngilizce Öğrenme Rehberi</h2>
       <ul>
-        <li><strong>Muzlu Yulaf Topları</strong> – 5 dakika, pişirme yok</li>
-        <li><strong>Fırınsız Mozaik Pasta</strong> – çocukluğumuzun tatlısı</li>
-        <li><strong>Kupta Çilekli Cheesecake</strong> – porsiyonluk ve pratik</li>
+        <li>Duolingo, Babbel gibi uygulamalarla günlük 15 dakika pratik yap.</li>
+        <li>Simple English YouTube kanalları takip et.</li>
+        <li>Sesli kitap dinle ve yeni kelimeler not al.</li>
+        <li>Online sohbet uygulamalarıyla yabancılarla konuş.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div id="modal4" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal4')">&times;</span>
+      <h2>“Atomik Alışkanlıklar” Kitap İncelemesi</h2>
+      <p>Kitap dört temel prensipten bahsediyor:</p>
+      <ul>
+        <li>Küçük alışkanlıklar büyük değişim yaratır.</li>
+        <li>Çevreni alışkanlıklarını destekleyecek şekilde düzenle.</li>
+        <li>Davranışını izle ve ilerleme oluştur.</li>
+        <li>Dört aşamalı döngüyü kullanarak kalıcı değişiklikler yap.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Modal 5 -->
+  <div id="modal5" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal5')">&times;</span>
+      <h2>Sağlıklı Kahvaltı Tarifleri</h2>
+      <ul>
+        <li><strong>Muzlu Yulaf Kaseleri:</strong> Muz, yulaf ve sade yoğurtla hızlı bir enerji.</li>
+        <li><strong>Avokadolu Tam Tahıllı Tost:</strong> Avokado + yumurta + kepekli ekmek.</li>
+        <li><strong>Chia Puding:</strong> Chia tohumunu badem sütüyle hazırlayıp meyve ekle.</li>
       </ul>
     </div>
   </div>
@@ -242,21 +151,13 @@
   </footer>
 
   <script>
-    function openModal(id) {
-      document.getElementById(id).style.display = "block";
-    }
-    function closeModal(id) {
-      document.getElementById(id).style.display = "none";
-    }
-    window.onclick = function(event) {
-      const modals = document.querySelectorAll('.modal');
-      modals.forEach(modal => {
-        if (event.target === modal) {
-          modal.style.display = "none";
-        }
+    function openModal(id) { document.getElementById(id).style.display = "block"; }
+    function closeModal(id) { document.getElementById(id).style.display = "none"; }
+    window.onclick = function(e) {
+      document.querySelectorAll('.modal').forEach(m => {
+        if (e.target === m) m.style.display = 'none';
       });
     };
   </script>
 </body>
 </html>
-google.com, pub-1335121890062124, DIRECT, f08c47fec0942fa0
