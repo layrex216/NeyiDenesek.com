@@ -1,121 +1,117 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="google-adsense-account" content="ca-pub-1335121890062124">
-  <title>Denedin Mi? - Oyun Blogu</title>
-
-  <!-- AdSense Script -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1335121890062124" crossorigin="anonymous"></script>
-
-  <!-- Fonts -->
+  <title>Denedin Mi? - Oyun Haberleri</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1335121890062124" crossorigin="anonymous"></script>
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * { box-sizing: border-box; }
     body {
       font-family: 'Quicksand', sans-serif;
-      background-color: #121212;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
       color: #f4f4f4;
-      line-height: 1.6;
     }
     header {
       background: linear-gradient(135deg, #ff0080, #7928ca);
-      color: white;
+      padding: 40px 20px;
       text-align: center;
-      padding: 50px 20px 30px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      color: white;
+      box-shadow: 0 0 30px #00000099;
     }
     header h1 {
       font-family: 'Orbitron', sans-serif;
-      font-size: 3rem;
-      margin-bottom: 10px;
+      font-size: 3em;
+      margin: 0;
+      text-shadow: 2px 2px 8px black;
     }
     header p {
-      font-size: 1.2rem;
+      margin-top: 10px;
+      font-size: 1.2em;
       font-weight: 600;
     }
     nav {
-      background: #1a1a1a;
-      padding: 15px;
+      background: #111;
+      padding: 10px;
       text-align: center;
     }
     nav a {
-      color: #00ffe7;
-      text-decoration: none;
+      color: #0ff;
       margin: 0 15px;
       font-weight: bold;
-      transition: 0.3s;
+      text-decoration: none;
+      transition: color 0.3s;
     }
     nav a:hover {
       color: #fff;
+      text-shadow: 0 0 10px #0ff;
     }
     .arama {
       text-align: center;
-      padding: 30px;
+      margin: 30px 0;
     }
     .arama input {
       padding: 12px 20px;
-      width: 70%;
-      max-width: 500px;
-      border: none;
+      width: 60%;
       border-radius: 30px;
+      border: none;
       font-size: 1em;
+      box-shadow: 0 0 10px #00000088;
+    }
+    .reklam {
+      margin: 20px auto;
+      text-align: center;
     }
     main {
-      padding: 40px 5%;
+      padding: 40px 10%;
     }
     .haber {
-      background: #1e1e1e;
-      margin-bottom: 40px;
-      border-radius: 12px;
+      background: #1f1f1f;
       padding: 20px;
-      box-shadow: 0 0 10px #00000099;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.6);
+      max-width: 800px;
+      margin: 40px auto;
     }
     .haber img {
       width: 100%;
-      border-radius: 10px;
+      border-radius: 12px;
       margin-bottom: 15px;
     }
     .haber h2 {
       color: #00ffcc;
-      font-size: 1.6rem;
     }
     footer {
       background: #000;
       color: #aaa;
       text-align: center;
-      padding: 30px 10px;
-      font-size: 0.9rem;
-    }
-    .reklam {
-      margin: 20px auto;
-      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Denedin Mi?</h1>
-    <p>Oyunlar, Haberler ve Daha Fazlası</p>
+    <p>İçerikler, Fikirler, Keşifler – Hepsi Burada</p>
   </header>
 
   <nav>
     <a href="#">Anasayfa</a>
     <a href="#">Popüler</a>
-    <a href="#">Yeni Oyunlar</a>
-    <a href="#">İncelemeler</a>
-    <a href="#">İletişim</a>
+    <a href="#">Yeniler</a>
+    <a href="#">Kategoriler</a>
   </nav>
 
   <div class="arama">
-    <input type="text" placeholder="Hangi oyunu merak ediyorsun?">
+    <input type="text" placeholder="Ne denemek istersin?">
   </div>
 
   <div class="reklam">
-    <!-- AdSense reklam alanı -->
     <ins class="adsbygoogle"
          style="display:block"
          data-ad-client="ca-pub-1335121890062124"
@@ -125,30 +121,39 @@
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
-  <main>
-    <div class="haber">
-      <img src="https://cdn.pixabay.com/photo/2020/10/24/21/23/gaming-5689799_1280.jpg" alt="GTA 6">
-      <h2>GTA 6 Sızdırıldı mı?</h2>
-      <p>Rockstar Games, sessizliğini korurken yeni sızıntılar interneti kasıp kavuruyor.</p>
-    </div>
-
-    <div class="haber">
-      <img src="https://cdn.pixabay.com/photo/2021/08/25/07/31/valorant-6573649_1280.jpg" alt="Valorant Yeni Ajan">
-      <h2>Valorant'a Yeni Ajan Geliyor!</h2>
-      <p>Yeni ajanın adı sızdı: "Echo". Özellikleri oldukça şaşırtıcı.</p>
-    </div>
-
-    <div class="haber">
-      <img src="https://cdn.pixabay.com/photo/2021/11/10/12/45/cyberpunk-6783534_1280.jpg" alt="Cyberpunk 2077">
-      <h2>Cyberpunk 2077 Geri Döndü!</h2>
-      <p>Patch 2.1 ile birlikte tüm hatalar neredeyse ortadan kalktı.</p>
-    </div>
-  </main>
+  <div class="haber" id="haberKutusu">
+    <!-- JavaScript ile dinamik içerik gelecek -->
+  </div>
 
   <footer>
-    <p>&copy; 2025 Denedin Mi? Oyun Blogu - Tüm hakları saklıdır.</p>
-    <p>İletişim: info@denedinmi.com</p>
+    <p>&copy; 2025 Denedin Mi? Tüm hakları saklıdır.</p>
   </footer>
+
+  <script>
+    const haberler = [
+      {
+        baslik: "GTA 6 Sızdırıldı mı?",
+        metin: "Rockstar Games, sessizliğini korurken yeni sızıntılar interneti kasıp kavuruyor.",
+        resim: "https://cdn.pixabay.com/photo/2020/10/24/21/23/gaming-5689799_1280.jpg"
+      },
+      {
+        baslik: "Valorant'a Yeni Ajan Geliyor!",
+        metin: "Yeni ajanın adı sızdı: 'Echo'. Özellikleri oldukça şaşırtıcı.",
+        resim: "https://cdn.pixabay.com/photo/2021/08/25/07/31/valorant-6573649_1280.jpg"
+      },
+      {
+        baslik: "Cyberpunk 2077 Geri Döndü!",
+        metin: "Patch 2.1 ile birlikte tüm hatalar neredeyse ortadan kalktı.",
+        resim: "https://cdn.pixabay.com/photo/2021/11/10/12/45/cyberpunk-6783534_1280.jpg"
+      }
+    ];
+
+    const rasgele = haberler[Math.floor(Math.random() * haberler.length)];
+    document.getElementById("haberKutusu").innerHTML = `
+      <img src="${rasgele.resim}" alt="Haber görseli">
+      <h2>${rasgele.baslik}</h2>
+      <p>${rasgele.metin}</p>
+    `;
+  </script>
 </body>
 </html>
-
