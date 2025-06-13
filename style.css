@@ -1,135 +1,90 @@
-/* Genel Ayarlar */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
-    color: #333;
+  font-family: 'Poppins', sans-serif;
+  background: #f4f7fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-/* Başlık (Header) */
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #00bfff, #007acc);
+  color: white;
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+nav {
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #388E3C;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 0;
+  list-style: none;
 }
 
-nav ul li {
-    margin: 0 10px;
+nav li a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #007acc;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 12px 10px;
-    display: block;
+nav li a:hover {
+  background: #007acc;
+  color: white;
+  border-radius: 8px;
 }
 
-nav ul li a:hover {
-    background-color: #2E7D32;
-    border-radius: 5px;
+.search {
+  text-align: center;
+  margin: 30px 0;
 }
 
-/* Reklam Alanı */
-.reklam {
-    text-align: center;
-    background-color: #fff;
-    padding: 15px;
-    margin: 20px auto;
-    border: 1px dashed #ccc;
-    width: 90%;
-    max-width: 728px;
+.search input {
+  padding: 12px 20px;
+  width: 60%;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  font-size: 1em;
 }
 
-/* Arama Kutusu */
-.arama {
-    max-width: 800px;
-    margin: 10px auto;
-    text-align: center;
+.news-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
 }
 
-.arama input[type="text"] {
-    width: 90%;
-    max-width: 400px;
-    padding: 10px;
-    font-size: 16px;
+.news-container .haber {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.05);
 }
 
-/* Ana İçerik */
-main {
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 0 15px;
+.news-container img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  max-height: 400px;
 }
 
-article {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-article img {
-    width: 100%;
-    border-radius: 10px;
-    height: auto;
-}
-
-.etiket {
-    font-size: 0.9em;
-    color: #666;
-    font-style: italic;
-}
-
-article h2 {
-    margin-top: 10px;
-}
-
-article a {
-    color: #4CAF50;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-article a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
 footer {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
+  background: #1c1c1c;
+  color: #ccc;
+  text-align: center;
+  padding: 30px;
+  margin-top: 60px;
 }
-
-/* Mobil Uyum */
-@media screen and (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    .reklam {
-        width: 95%;
-        padding: 10px;
-    }
-
-    .arama input[type="text"] {
-        width: 100%;
-    }
-}
-google.com, pub-1335121890062124, DIRECT, f08c47fec0942fa0
