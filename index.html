@@ -4,15 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="google-adsense-account" content="ca-pub-1335121890062124">
-  <title>Denedin Mi?</title>
+  <title>Denedin Mi? - Oyun Haberleri</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1335121890062124" crossorigin="anonymous"></script>
-
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
+    * { box-sizing: border-box; }
     body {
       font-family: 'Quicksand', sans-serif;
       margin: 0;
@@ -20,7 +16,6 @@
       background: linear-gradient(to right, #1e3c72, #2a5298);
       color: #f4f4f4;
     }
-
     header {
       background: linear-gradient(135deg, #ff0080, #7928ca);
       padding: 40px 20px;
@@ -28,26 +23,22 @@
       color: white;
       box-shadow: 0 0 30px #00000099;
     }
-
     header h1 {
       font-family: 'Orbitron', sans-serif;
       font-size: 3em;
       margin: 0;
       text-shadow: 2px 2px 8px black;
     }
-
     header p {
       margin-top: 10px;
       font-size: 1.2em;
       font-weight: 600;
     }
-
     nav {
       background: #111;
       padding: 10px;
       text-align: center;
     }
-
     nav a {
       color: #0ff;
       margin: 0 15px;
@@ -55,17 +46,14 @@
       text-decoration: none;
       transition: color 0.3s;
     }
-
     nav a:hover {
       color: #fff;
       text-shadow: 0 0 10px #0ff;
     }
-
     .arama {
       text-align: center;
       margin: 30px 0;
     }
-
     .arama input {
       padding: 12px 20px;
       width: 60%;
@@ -74,81 +62,29 @@
       font-size: 1em;
       box-shadow: 0 0 10px #00000088;
     }
-
     .reklam {
       margin: 20px auto;
       text-align: center;
     }
-
     main {
       padding: 40px 10%;
     }
-
-    article {
-      background: rgba(255, 255, 255, 0.1);
-      border: 2px solid #fff3;
-      padding: 25px;
-      margin: 25px 0;
-      border-radius: 20px;
-      box-shadow: 0 0 20px #00000066;
-      transition: all 0.4s;
-      cursor: pointer;
+    .haber {
+      background: #1f1f1f;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.6);
+      max-width: 800px;
+      margin: 40px auto;
     }
-
-    article:hover {
-      transform: scale(1.02);
-      box-shadow: 0 0 30px #00f2ffaa;
-    }
-
-    article h2 {
-      color: #00ffe7;
-      font-size: 1.8em;
-    }
-
-    .etiket {
-      font-size: 0.9em;
-      color: #ff0;
-      margin-top: 5px;
-      margin-bottom: 10px;
-    }
-
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      left: 0;
-      top: 0;
+    .haber img {
       width: 100%;
-      height: 100%;
-      background-color: rgba(0,0,0,0.9);
-      overflow: auto;
+      border-radius: 12px;
+      margin-bottom: 15px;
     }
-
-    .modal-content {
-      background-color: #1f1f1f;
-      margin: 10% auto;
-      padding: 30px;
-      border: 1px solid #ccc;
-      width: 80%;
-      max-width: 700px;
-      border-radius: 20px;
-      color: #fff;
+    .haber h2 {
+      color: #00ffcc;
     }
-
-    .close {
-      color: #f44336;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-      color: #fff;
-      text-shadow: 0 0 10px red;
-      cursor: pointer;
-    }
-
     footer {
       background: #000;
       color: #aaa;
@@ -156,16 +92,9 @@
       padding: 20px;
       font-size: 0.9em;
     }
-
-    @keyframes glow {
-      0% { box-shadow: 0 0 5px #0ff; }
-      50% { box-shadow: 0 0 20px #0ff; }
-      100% { box-shadow: 0 0 5px #0ff; }
-    }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Denedin Mi?</h1>
     <p>İçerikler, Fikirler, Keşifler – Hepsi Burada</p>
@@ -192,23 +121,8 @@
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
-  <main>
-    <!-- İçerikler buraya (önceki içeriklerle aynı şekilde) -->
-    <article onclick="openModal('modal1')">
-      <h2>2025'te Takip Edilmesi Gereken Uygulamalar</h2>
-      <div class="etiket">#teknoloji #mobil</div>
-      <p>Yeni nesil üretkenlik ve verimlilik araçlarını incele.</p>
-    </article>
-    <!-- Diğer içerikler modal'larıyla birlikte aynı şekilde eklenebilir -->
-  </main>
-
-  <!-- Modal Örnek -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal1')">&times;</span>
-      <h2>2025 Uygulamaları</h2>
-      <p>FocusZen, MindTrack, TradeMate gibi uygulamalarla hayatını kolaylaştır.</p>
-    </div>
+  <div class="haber" id="haberKutusu">
+    <!-- JavaScript ile dinamik içerik gelecek -->
   </div>
 
   <footer>
@@ -216,17 +130,30 @@
   </footer>
 
   <script>
-    function openModal(id) {
-      document.getElementById(id).style.display = "block";
-    }
-    function closeModal(id) {
-      document.getElementById(id).style.display = "none";
-    }
-    window.onclick = function(e) {
-      document.querySelectorAll('.modal').forEach(m => {
-        if (e.target === m) m.style.display = 'none';
-      });
-    };
+    const haberler = [
+      {
+        baslik: "GTA 6 Sızdırıldı mı?",
+        metin: "Rockstar Games, sessizliğini korurken yeni sızıntılar interneti kasıp kavuruyor.",
+        resim: "https://cdn.pixabay.com/photo/2020/10/24/21/23/gaming-5689799_1280.jpg"
+      },
+      {
+        baslik: "Valorant'a Yeni Ajan Geliyor!",
+        metin: "Yeni ajanın adı sızdı: 'Echo'. Özellikleri oldukça şaşırtıcı.",
+        resim: "https://cdn.pixabay.com/photo/2021/08/25/07/31/valorant-6573649_1280.jpg"
+      },
+      {
+        baslik: "Cyberpunk 2077 Geri Döndü!",
+        metin: "Patch 2.1 ile birlikte tüm hatalar neredeyse ortadan kalktı.",
+        resim: "https://cdn.pixabay.com/photo/2021/11/10/12/45/cyberpunk-6783534_1280.jpg"
+      }
+    ];
+
+    const rasgele = haberler[Math.floor(Math.random() * haberler.length)];
+    document.getElementById("haberKutusu").innerHTML = `
+      <img src="${rasgele.resim}" alt="Haber görseli">
+      <h2>${rasgele.baslik}</h2>
+      <p>${rasgele.metin}</p>
+    `;
   </script>
 </body>
 </html>
