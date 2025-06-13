@@ -3,12 +3,150 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-adsense-account" content="ca-pub-1335121890062124" />
   <title>Denedin Mi?</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1335121890062124" crossorigin="anonymous"></script>
   <style>
-    /* CSS kodların buraya aynı şekilde bırakıldı */
-    /* ... (aynı CSS kodların) ... */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: linear-gradient(to bottom right, #f8f9fc, #e0e7ff);
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #4f46e5;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+    nav {
+      background: #4f46e5;
+      padding: 10px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      list-style: none;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #6366f1;
+    }
+    .arama {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .arama input {
+      padding: 10px 20px;
+      width: 80%;
+      max-width: 400px;
+      border: 2px solid #c7d2fe;
+      border-radius: 12px;
+      font-size: 1rem;
+    }
+    .reklam {
+      background: #e0e7ff;
+      padding: 15px;
+      border: 2px dashed #6366f1;
+      text-align: center;
+      margin: 30px 0;
+      border-radius: 10px;
+      font-weight: 600;
+      color: #4f46e5;
+    }
+    main article {
+      background: white;
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+    main article:hover {
+      transform: translateY(-4px);
+    }
+    main article h2 {
+      font-size: 1.5rem;
+      color: #4f46e5;
+      margin-bottom: 10px;
+    }
+    .etiket {
+      font-size: 0.8rem;
+      color: #6b7280;
+      margin-bottom: 10px;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    .modal-content {
+      background-color: #fff;
+      margin: 10% auto;
+      padding: 30px;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 20px;
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      .arama input {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -32,55 +170,72 @@
     <input type="text" placeholder="Ara..." />
   </div>
 
-  <!-- Reklam Alanı -->
+  <!-- Reklam Kodu -->
   <div class="reklam">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-1335121890062124"
-         data-ad-slot="1234567890" <!-- BURAYI kendi slot numaranla değiştir -->
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1335121890062124"
+     crossorigin="anonymous"></script>
   </div>
 
   <main>
-    <!-- Makale 1 -->
     <article onclick="openModal('modal1')">
       <h2>2025'te Takip Etmen Gereken Uygulamalar</h2>
       <div class="etiket">#teknoloji #mobil</div>
       <p>En popüler 3 mobil uygulamayı senin için derledik...</p>
     </article>
 
-    <!-- Makale 2 -->
-    <article>
-      <h2>Mutlaka Okunması Gereken 5 Kitap</h2>
-      <div class="etiket">#kitap #kişiselgelişim</div>
-      <p>Hayatınıza yön verecek kitap önerilerimizle karşınızdayız...</p>
+    <article onclick="openModal('modal2')">
+      <h2>Okuman Gereken 5 Efsane Kitap</h2>
+      <div class="etiket">#kitap #kültür</div>
+      <p>Bu kitaplar hem hayat görüşünü hem de kelime dağarcığını değiştirecek!</p>
     </article>
 
-    <!-- Makale 3 -->
-    <article>
-      <h2>Evde Deneyebileceğiniz Kolay ve Havalı Tarifler</h2>
-      <div class="etiket">#yemek #pratik</div>
-      <p>Hem lezzetli hem pratik tariflerle misafirlerinizi etkileyin...</p>
-    </article>
-
-    <!-- Makale 4 -->
-    <article>
-      <h2>Online Para Kazanma Yolları: Gerçekçi Taktikler</h2>
-      <div class="etiket">#para #internet</div>
-      <p>Gerçek kullanıcı deneyimleriyle 2025'te işe yarayan yöntemler...</p>
-    </article>
-
-    <!-- Makale 5 -->
-    <article>
-      <h2>Sabah Rutinleri: Güne Enerjik Başlamanın Yolları</h2>
-      <div class="etiket">#kişiselgelişim #motivasyon</div>
-      <p>Verimli bir gün için sabah alışkanlıklarınızı gözden geçirin...</p>
+    <article onclick="openModal('modal3')">
+      <h2>Evde Deneyebileceğin Pratik Tatlı Tarifleri</h2>
+      <div class="etiket">#yemek #tatlı</div>
+      <p>5 dakikada hazırlanan enfes tarifler burada!</p>
     </article>
   </main>
+
+  <!-- Modal 1 -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <h2>2025'te Takip Etmen Gereken Uygulamalar</h2>
+      <ul>
+        <li><strong>FocusZen:</strong> Konsantrasyon için minimalist zamanlayıcı</li>
+        <li><strong>MindTrack:</strong> Duygu takibi ve günlük yazma uygulaması</li>
+        <li><strong>TradeMate:</strong> Yatırım ve kripto haberlerini tek yerden takip et</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <h2>Okuman Gereken 5 Efsane Kitap</h2>
+      <ul>
+        <li><strong>Simyacı</strong> – Paulo Coelho</li>
+        <li><strong>Hayvan Çiftliği</strong> – George Orwell</li>
+        <li><strong>1984</strong> – George Orwell</li>
+        <li><strong>Uçurtma Avcısı</strong> – Khaled Hosseini</li>
+        <li><strong>Suç ve Ceza</strong> – Fyodor Dostoyevski</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal3')">&times;</span>
+      <h2>Evde Deneyebileceğin Pratik Tatlı Tarifleri</h2>
+      <ul>
+        <li><strong>Muzlu Yulaf Topları</strong> – 5 dakika, pişirme yok</li>
+        <li><strong>Fırınsız Mozaik Pasta</strong> – çocukluğumuzun tatlısı</li>
+        <li><strong>Kupta Çilekli Cheesecake</strong> – porsiyonluk ve pratik</li>
+      </ul>
+    </div>
+  </div>
 
   <footer>
     <p>&copy; 2025 Denedin Mi? Tüm hakları saklıdır.</p>
@@ -94,9 +249,9 @@
       document.getElementById(id).style.display = "none";
     }
     window.onclick = function(event) {
-      const modals = document.querySelectorAll(".modal");
+      const modals = document.querySelectorAll('.modal');
       modals.forEach(modal => {
-        if (event.target == modal) {
+        if (event.target === modal) {
           modal.style.display = "none";
         }
       });
