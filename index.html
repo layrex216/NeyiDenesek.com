@@ -5,26 +5,181 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="google-adsense-account" content="ca-pub-1335121890062124">
   <title>Denedin Mi?</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    /* …CSS kodların aynen devam ediyor… */
-  </style>
-
-  <!-- Reklam JS -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1335121890062124" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: #f4f4f4;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ff0080, #7928ca);
+      padding: 40px 20px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 0 30px #00000099;
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3em;
+      margin: 0;
+      text-shadow: 2px 2px 8px black;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+      font-weight: 600;
+    }
+
+    nav {
+      background: #111;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #0ff;
+      margin: 0 15px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+      text-shadow: 0 0 10px #0ff;
+    }
+
+    .arama {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .arama input {
+      padding: 12px 20px;
+      width: 60%;
+      border-radius: 30px;
+      border: none;
+      font-size: 1em;
+      box-shadow: 0 0 10px #00000088;
+    }
+
+    .reklam {
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    main {
+      padding: 40px 10%;
+    }
+
+    article {
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid #fff3;
+      padding: 25px;
+      margin: 25px 0;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #00000066;
+      transition: all 0.4s;
+      cursor: pointer;
+    }
+
+    article:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 30px #00f2ffaa;
+    }
+
+    article h2 {
+      color: #00ffe7;
+      font-size: 1.8em;
+    }
+
+    .etiket {
+      font-size: 0.9em;
+      color: #ff0;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.9);
+      overflow: auto;
+    }
+
+    .modal-content {
+      background-color: #1f1f1f;
+      margin: 10% auto;
+      padding: 30px;
+      border: 1px solid #ccc;
+      width: 80%;
+      max-width: 700px;
+      border-radius: 20px;
+      color: #fff;
+    }
+
+    .close {
+      color: #f44336;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #fff;
+      text-shadow: 0 0 10px red;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #000;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    @keyframes glow {
+      0% { box-shadow: 0 0 5px #0ff; }
+      50% { box-shadow: 0 0 20px #0ff; }
+      100% { box-shadow: 0 0 5px #0ff; }
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <h1>Denedin Mi?</h1>
-    <p>Deneyimlere dayalı içerikler, öneriler, yorumlar</p>
+    <p>İçerikler, Fikirler, Keşifler – Hepsi Burada</p>
   </header>
 
   <nav>
-    <!-- …nav kodları burada… -->
+    <a href="#">Anasayfa</a>
+    <a href="#">Popüler</a>
+    <a href="#">Yeniler</a>
+    <a href="#">Kategoriler</a>
   </nav>
 
   <div class="arama">
-    <input type="text" placeholder="Ara..." />
+    <input type="text" placeholder="Ne denemek istersin?">
   </div>
 
   <div class="reklam">
@@ -34,115 +189,25 @@
          data-ad-slot="1234567890"
          data-ad-format="auto"
          data-full-width-responsive="true"></ins>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
   <main>
-    <!-- 1. İçerik -->
+    <!-- İçerikler buraya (önceki içeriklerle aynı şekilde) -->
     <article onclick="openModal('modal1')">
-      <h2>2025'te Takip Etmen Gereken Uygulamalar</h2>
+      <h2>2025'te Takip Edilmesi Gereken Uygulamalar</h2>
       <div class="etiket">#teknoloji #mobil</div>
-      <p>FocusZen, MindTrack ve TradeMate gibi üretkenliği artıran yeni nesil uygulamaları keşfet.</p>
+      <p>Yeni nesil üretkenlik ve verimlilik araçlarını incele.</p>
     </article>
-
-    <!-- 2. İçerik -->
-    <article onclick="openModal('modal2')">
-      <h2>Evde Para Kazanmanın 5 Etkili Yolu</h2>
-      <div class="etiket">#para #internet</div>
-      <p>Freelance, blog yazarlığı, YouTube gibi gerçekçi ve uygulanabilir yöntemlerle para kazanmaya başla.</p>
-    </article>
-
-    <!-- 3. İçerik -->
-    <article onclick="openModal('modal3')">
-      <h2>Kendi Kendine İngilizce Öğrenme Rehberi</h2>
-      <div class="etiket">#egitim #ingilizce</div>
-      <p>Uygulama, kitap ve pratiklerle sıfırdan İngilizce öğrenmenin etkili yollarını incele.</p>
-    </article>
-
-    <!-- 4. İçerik -->
-    <article onclick="openModal('modal4')">
-      <h2>“Atomik Alışkanlıklar” Kitap İncelemesi</h2>
-      <div class="etiket">#kitap #kişiselgelişim</div>
-      <p>James Clear'in çok satan kitabı neden bu kadar popüler? Hayatına uygulamak için ipuçları.</p>
-    </article>
-
-    <!-- 5. İçerik -->
-    <article onclick="openModal('modal5')">
-      <h2>Sağlıklı Kahvaltı Tarifleri</h2>
-      <div class="etiket">#yemek #sağlık</div>
-      <p>Muzlu yulaf, avokadolu tost, chia pudingi gibi pratik ve lezzetli tarifleri keşfet.</p>
-    </article>
+    <!-- Diğer içerikler modal'larıyla birlikte aynı şekilde eklenebilir -->
   </main>
 
-  <!-- Modal 1 -->
+  <!-- Modal Örnek -->
   <div id="modal1" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal('modal1')">&times;</span>
-      <h2>2025'te Takip Etmen Gereken Uygulamalar</h2>
-      <ul>
-        <li><strong>FocusZen:</strong> Minimalist zamanlayıcı, odaklanmana yardımcı olur.</li>
-        <li><strong>MindTrack:</strong> Duygu takibi ve günlük tutma uygulaması.</li>
-        <li><strong>TradeMate:</strong> Kripto ve yatırım haberlerini takip et.</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Modal 2 -->
-  <div id="modal2" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal2')">&times;</span>
-      <h2>Evde Para Kazanmanın 5 Etkili Yolu</h2>
-      <ol>
-        <li>Freelance yazarlık – Upwork, Fiverr gibi platformlarda içerik üret.</li>
-        <li>Blog oluştur – Niş konularda SEO çalışarak Google’dan trafik çek.</li>
-        <li>YouTube kanalı aç – Eğitim veya günlük vlog formatında içerik üret.</li>
-        <li>Çevrimiçi danışmanlık – Uzmanlık alanında birebir destek ver.</li>
-        <li>E-kitap yazmak – Kendi bilgi ve tecrübelerini ürün haline getir.</li>
-      </ol>
-    </div>
-  </div>
-
-  <!-- Modal 3 -->
-  <div id="modal3" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal3')">&times;</span>
-      <h2>Kendi Kendine İngilizce Öğrenme Rehberi</h2>
-      <ul>
-        <li>Duolingo, Babbel gibi uygulamalarla günlük 15 dakika pratik yap.</li>
-        <li>Simple English YouTube kanalları takip et.</li>
-        <li>Sesli kitap dinle ve yeni kelimeler not al.</li>
-        <li>Online sohbet uygulamalarıyla yabancılarla konuş.</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Modal 4 -->
-  <div id="modal4" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal4')">&times;</span>
-      <h2>“Atomik Alışkanlıklar” Kitap İncelemesi</h2>
-      <p>Kitap dört temel prensipten bahsediyor:</p>
-      <ul>
-        <li>Küçük alışkanlıklar büyük değişim yaratır.</li>
-        <li>Çevreni alışkanlıklarını destekleyecek şekilde düzenle.</li>
-        <li>Davranışını izle ve ilerleme oluştur.</li>
-        <li>Dört aşamalı döngüyü kullanarak kalıcı değişiklikler yap.</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Modal 5 -->
-  <div id="modal5" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal5')">&times;</span>
-      <h2>Sağlıklı Kahvaltı Tarifleri</h2>
-      <ul>
-        <li><strong>Muzlu Yulaf Kaseleri:</strong> Muz, yulaf ve sade yoğurtla hızlı bir enerji.</li>
-        <li><strong>Avokadolu Tam Tahıllı Tost:</strong> Avokado + yumurta + kepekli ekmek.</li>
-        <li><strong>Chia Puding:</strong> Chia tohumunu badem sütüyle hazırlayıp meyve ekle.</li>
-      </ul>
+      <h2>2025 Uygulamaları</h2>
+      <p>FocusZen, MindTrack, TradeMate gibi uygulamalarla hayatını kolaylaştır.</p>
     </div>
   </div>
 
@@ -151,8 +216,12 @@
   </footer>
 
   <script>
-    function openModal(id) { document.getElementById(id).style.display = "block"; }
-    function closeModal(id) { document.getElementById(id).style.display = "none"; }
+    function openModal(id) {
+      document.getElementById(id).style.display = "block";
+    }
+    function closeModal(id) {
+      document.getElementById(id).style.display = "none";
+    }
     window.onclick = function(e) {
       document.querySelectorAll('.modal').forEach(m => {
         if (e.target === m) m.style.display = 'none';
