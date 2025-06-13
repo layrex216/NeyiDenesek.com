@@ -8,7 +8,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1335121890062124" crossorigin="anonymous"></script>
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Quicksand', sans-serif;
       margin: 0;
@@ -16,6 +19,7 @@
       background: linear-gradient(to right, #1e3c72, #2a5298);
       color: #f4f4f4;
     }
+
     header {
       background: linear-gradient(135deg, #ff0080, #7928ca);
       padding: 40px 20px;
@@ -23,22 +27,26 @@
       color: white;
       box-shadow: 0 0 30px #00000099;
     }
+
     header h1 {
       font-family: 'Orbitron', sans-serif;
       font-size: 3em;
       margin: 0;
       text-shadow: 2px 2px 8px black;
     }
+
     header p {
       margin-top: 10px;
       font-size: 1.2em;
       font-weight: 600;
     }
+
     nav {
       background: #111;
       padding: 10px;
       text-align: center;
     }
+
     nav a {
       color: #0ff;
       margin: 0 15px;
@@ -46,14 +54,17 @@
       text-decoration: none;
       transition: color 0.3s;
     }
+
     nav a:hover {
       color: #fff;
       text-shadow: 0 0 10px #0ff;
     }
+
     .arama {
       text-align: center;
       margin: 30px 0;
     }
+
     .arama input {
       padding: 12px 20px;
       width: 60%;
@@ -62,29 +73,40 @@
       font-size: 1em;
       box-shadow: 0 0 10px #00000088;
     }
+
     .reklam {
       margin: 20px auto;
       text-align: center;
     }
-    main {
-      padding: 40px 10%;
-    }
+
     .haber {
       background: #1f1f1f;
       padding: 20px;
       border-radius: 12px;
       box-shadow: 0 0 12px rgba(0,0,0,0.6);
-      max-width: 800px;
+      max-width: 700px;
       margin: 40px auto;
+      text-align: center;
     }
+
     .haber img {
       width: 100%;
       border-radius: 12px;
       margin-bottom: 15px;
+      max-height: 400px;
+      object-fit: cover;
     }
+
     .haber h2 {
       color: #00ffcc;
+      margin-bottom: 10px;
     }
+
+    .haber p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
     footer {
       background: #000;
       color: #aaa;
@@ -95,6 +117,7 @@
   </style>
 </head>
 <body>
+
   <header>
     <h1>Denedin Mi?</h1>
     <p>İçerikler, Fikirler, Keşifler – Hepsi Burada</p>
@@ -122,7 +145,7 @@
   </div>
 
   <div class="haber" id="haberKutusu">
-    <!-- JavaScript ile dinamik içerik gelecek -->
+    <!-- Dinamik içerik burada -->
   </div>
 
   <footer>
@@ -134,17 +157,17 @@
       {
         baslik: "GTA 6 Sızdırıldı mı?",
         metin: "Rockstar Games, sessizliğini korurken yeni sızıntılar interneti kasıp kavuruyor.",
-        resim: "https://cdn.pixabay.com/photo/2020/10/24/21/23/gaming-5689799_1280.jpg"
+        resim: "https://images.unsplash.com/photo-1606813902634-d3d7e41f1a7b"
       },
       {
         baslik: "Valorant'a Yeni Ajan Geliyor!",
         metin: "Yeni ajanın adı sızdı: 'Echo'. Özellikleri oldukça şaşırtıcı.",
-        resim: "https://cdn.pixabay.com/photo/2021/08/25/07/31/valorant-6573649_1280.jpg"
+        resim: "https://images.unsplash.com/photo-1620116413727-8a9b7b2a560f"
       },
       {
         baslik: "Cyberpunk 2077 Geri Döndü!",
         metin: "Patch 2.1 ile birlikte tüm hatalar neredeyse ortadan kalktı.",
-        resim: "https://cdn.pixabay.com/photo/2021/11/10/12/45/cyberpunk-6783534_1280.jpg"
+        resim: "https://images.unsplash.com/photo-1607746882042-944635dfe10e"
       }
     ];
 
